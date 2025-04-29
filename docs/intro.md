@@ -2,46 +2,53 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Getting Started
 
-Let's discover **Docusaurus in less than 5 minutes**.
+The Data Layer Monitor is a powerful tool designed to safeguard the integrity of your web analytics implementation. By continuously validating your data layer across key events and parameters, it ensures your tracking setup remains consistent and reliable.
 
-## Getting Started
+## Core Functionality
 
-Get started by **creating a new site**.
+-   **Data Layer Validation**
+    The tool verifies that the correct data is being pushed into the data layer at crucial moments. It ensures that both event names and parameter values match your expected configuration.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+-   **State Comparison**
+    Every check compares the current state of the data layer against the desired state, identifying any mismatches or missing values.
 
-### What you'll need
+-   **Configuration-Based Setup**
+    The desired state is defined through a configuration interface within the tool. This setup doubles as live documentation of your tracking plan, making it easy to manage, review, and update over time.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Error Categorization
 
-## Generate a new site
+Errors are flagged with one of three severity levels:
 
-Generate a new Docusaurus site using the **classic template**.
+-   **High:** Critical issues likely to break reporting or attribution, like purchase event not being measured in more than 5% of the cases.
+-   **Medium:** Important discrepancies that could impact analysis, like item brand parameter missing in 2% of the add to cart events.
+-   **Low:** Minor issues, such as unexpected events measured or wrong data type.
 
-The classic template will automatically be added to your project after you run the command:
+## Notifications & Reporting
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+-   Automated error reports are sent daily every morning.
+-   You can choose your preferred notification channel: Slack, Microsoft Teams, or Email.
+-   Reports highlight affected pages, events, and specific parameter issues, giving your team a clear path to resolution.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Frequently Asked Questions
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+**Q: What platforms does the Data Layer Monitor support?**
 
-## Start your site
+A: The tool is platform-agnostic and works with any site that implements a structured data layer, including setups using Google Tag Manager, Tealium, or custom solutions.
 
-Run the development server:
+**Q: How is the “desired state” of the data layer defined?**
 
-```bash
-cd my-website
-npm run start
-```
+A: The desired state is configured in the Data Layer Monitor interface. It acts as both the configuration and documentation of your ideal data layer setup — specifying expected events, parameters, and values.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+**Q: How often are checks performed?**
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+A: Data layer checks are run continuously in the background, and any issues found are compiled into a daily report sent out every morning.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+**Q: How do I receive alerts?**
+
+A: You can choose your preferred communication channel: Slack, Microsoft Teams, or Email. You can also configure which teams or individuals receive which types of errors.
+
+**Q: Can I prioritize or ignore certain events?**
+
+A: Yes — the configuration allows you to assign severity levels to specific parameters or events, and you can mark non-critical fields as optional to reduce noise in reporting.
