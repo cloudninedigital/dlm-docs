@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Data Layer Monitor Documentation',
+  tagline: 'A guide to the Data Layer Monitor',
+  favicon: 'https://www.cloudninedigital.nl/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://cloudninedigital.github.io/',
@@ -45,7 +45,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/', // Serve the docs at the site's root
+          routeBasePath: 'docs',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
