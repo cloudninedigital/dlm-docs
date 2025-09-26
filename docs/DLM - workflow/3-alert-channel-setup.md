@@ -16,4 +16,4 @@ Get in contact with us, we have the slack notification set-up but have yet to st
 
 ## Teams
 
-Go to (or create) a teams channel. Once in, go to 'Manage channel', and go to connectors and click 'Edit'. Open the 'Incoming Webhook' and set this up + click configure. create a name, potentially an image and click 'Create'. Once created, you can copy the webhook which should start with 'https://<yourworkspace>.webhook.office.com/etc'. 
+Go to (or create) a teams channel. Once in, go to 'Manage channel', and go to connectors and click 'Edit'. Open the 'Incoming Webhook' and set this up + click configure. create a name, potentially an image and click 'Create'. Once created, you can copy the webhook which should start with 'https://~yourworkspace~.webhook.office.com/etc'. 
