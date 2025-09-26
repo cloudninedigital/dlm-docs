@@ -10,7 +10,7 @@ Configuration refers to the process of defining the desired state in which your 
 
 As a full configuration can take some time to properly set up, you can start the configuration process in 2 ways:
 - **from scratch**: define every single event and parameter yourself (potentially useful when a complete documentation is in place)
-- **from your current datalayer implementation** : let the monitor define a first version of documentation based upon what is currently happening on your platform. Note: this does require you to have run the shadowpixel for at least a couple of days (also depending on your traffic levels). Go to Settings and choose to (re) render the configuration from . Be aware that if you already have a configuration in place, this will be overwritten with the new version. The generated configuration will, in most cases, not be the final form you’re looking for, as ‘what is currently happening’ may not reflect ‘what should be happening’. Most likely you’ll still need to add and delete events and parameters to your own preferences.
+- **from your current datalayer implementation** : let the monitor define a first version of documentation based upon what is currently happening on your platform. Note: this does require you to have run the shadowpixel for at least a couple of days (also depending on your traffic levels). Go to Settings and choose to 'Re Run configuration Generation'. Be aware that if you already have a configuration in place, this will be overwritten with the new version. The generated configuration will, in most cases, not be the final form you’re looking for, as ‘what is currently happening’ may not reflect ‘what should be happening’. Most likely you’ll still need to add and delete events and parameters to your own preferences.
 
 ## Finetuning
 
@@ -95,3 +95,10 @@ Let's say you are a company that sells both products and subscriptions, which ar
 * **Additional conditions (optional)**: funnel_name equals 'subscription_funnel'
 * **Additional conditions description (optional)**: Only relevant in subscription funnel
 * **Always mark alerts on this field as "high-prio" (optional)**: false
+
+
+## Rerunning scans
+
+By default, the Datalayer Monitor validates the latest day of events on a daily basis, based upon the current configuration, and updates incrementally. If, however, you are actively in the process of changing the datalayer configuration, the new validation (and alerts) will only be using the new configuration from the new day of checking onwards only. 
+
+This might mean that if you've changed a lot of configuration, you may 

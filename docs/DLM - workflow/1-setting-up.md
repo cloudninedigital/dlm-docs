@@ -101,13 +101,10 @@ For the custom setup you can build up a call to the DLM shadowpixel yourself.
 
 ```
 
-
-
-
 ## Testing the setup
 
 You can validate the setup in 2 ways: 
-- **check in network tab**:  Open network tab in your browser to see if datalayer events trigger a call to https://collect.cloudninedigital.nl/<yourdomain>/datalayers/ with the correct outgoing payloads. 
+- **check in network tab**:  Open network tab in your browser to see if datalayer events trigger a call to `https://collect.cloudninedigital.nl/<yourdomain>/datalayers/` with the correct outgoing payloads. 
 - **check the DLM interface**: in the UI homepage you should be able to see the total number of events / per event type being measured, which could help you figure out if your shadowpixel setup is working
 
 
