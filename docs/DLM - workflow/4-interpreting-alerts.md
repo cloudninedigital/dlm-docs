@@ -18,7 +18,7 @@ The most up to date version will live in your settings section of the DLM, but h
 * **expected_pattern** → Certain values were measured for a parameter which did not match the configured regex pattern for that parameter. Example: the regex pattern for 'transaction_id' was set as '^\d8$', but suddenly the value 'asdas345' was measured for 'transaction_id'.
 * **expected_values** → Certain values were measured for a parameter which were not in the list of allowed values. Example: the allowed values for 'page_type' were set to 'home', 'plp', 'pdp' and 'checkout', but suddenly the value 'inspiration' was measured for parameter 'page_type'.
 
-## main alert screen
+## Main alert screen
 In the main alert screen you can see basic information about the alerts taking place. here you can 
 * see the short description of the alert
 * split the alert occurences between the events in which it occured (split by events)
