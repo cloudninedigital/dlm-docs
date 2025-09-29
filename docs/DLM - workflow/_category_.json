@@ -1,8 +1,8 @@
 {
-  "label": "Data Layer Monitoring Workflow",
+  "label": "Setting up the Data Layer Monitor",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Familiarize yourself with the optimized data layer monitoring workflow"
+    "description": "Familiarize yourself with the workflow to set up the Data Layer Monitor"
   }
 }
