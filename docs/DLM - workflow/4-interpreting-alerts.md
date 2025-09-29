@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Interpreting and acting upon alerts
 
-Once you've got everything setup, your 
+Once you've got everything setup, your next step will be to interpret and act upon any alerts that might be inbound. The below section can help you navigating the incoming alerts. 
 
 ## Alert Definitions
 
@@ -51,4 +51,6 @@ When acting upon alerts, there's a couple of options to keep 'administration' of
 
 ## Process of re-configuration
 
-In practice, you'll most likely see a cyclic motion happening where alerts come in from the current state of datalayer configuration, that either result in actions to fix the datalayer, or an amendment to the current configuration (because sometimes edge cases are allowed in your setup that you simply hadn't thought of yet). 
+Be aware that, at first hand, you might feel a bit overwhelmed with the amount of alerts coming in. You'll most likely enter a cyclic motion where alerts come in from the current state of datalayer configuration, that either result in actions to fix the datalayer, or an amendment to the current configuration (because sometimes edge cases are allowed in your setup that you simply hadn't thought of yet). 
+
+Once the configuration is tight enough, you will enter a period of 'control', where the current known issues are being dealt with, and any new issue arising can easily be spotted and acted upon. 
