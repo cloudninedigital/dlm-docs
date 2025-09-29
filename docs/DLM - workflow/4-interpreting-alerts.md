@@ -19,14 +19,35 @@ The most up to date version will live in your settings section of the DLM, but h
 * **expected_values** → Certain values were measured for a parameter which were not in the list of allowed values. Example: the allowed values for 'page_type' were set to 'home', 'plp', 'pdp' and 'checkout', but suddenly the value 'inspiration' was measured for parameter 'page_type'.
 
 ## main alert screen
-
+In the main alert screen you can see basic information about the alerts taking place. here you can 
+* see the short description of the alert
+* split the alert occurences between the events in which it occured (split by events)
+* Show measured values if the alert is related to specific values being set for a parameter
+* dive deeper into granularity to watch the issue occurence over time
 
 ## Deep-dive into alerts
 
+To further deep-dive into the issue at hand and find out in which situations the issue occurs, there's the alert detail page. You can get here by clicking on the 'View Details' button. Within this area, you will see a graphic display of the alert over the time period filtered on, and you can see a breakdown of the issue over the important meta-columns being measured in the DLM: 
+* Browser
+* Device type
+* Section (assuming this is set-up correctly in the DLM shadowpixel)
+* URL
 
+### AI insights
+
+If the above breakdown doesn't provide enough actionable insights to pinpoint where the issue is happening, the 'AI insights' portion of the alerts might. This section uses all other datalayer keys and values as input to search for a pattern in the issue that is occuring. 
+
+an example here might be that an issue specifically always happens when the datalayer key 'login_status' is set to 'logged_in', or that the issue is particularly present when someone uses a specific payment provider in the checkout flow. This kind of information can be found by the AI insights portion of the detail view. 
+
+This pattern recognition already could give you a headstart in pinpointing where (and in which development team) a fix should be implemented. 
 
 ## Acting upon alerts
 
+When acting upon alerts, there's a couple of options to keep 'administration' of the issue up to date with current developments. 
+
+* You can add a ticket link of the issue that has been generated in your own project tool (like Jira / Asana / etc.) to easily link the issue to any progress that has been made. 
+* You can update the status from open to in progress or solved. This will make sure the alert doesn't show up in the alert email anymore, because it's clear it is being handled. 
+* You can change the priority according to interpretation. An alert may be a lot lower priority in the context of your business than originally measured, or the other way around. You can manually override the priority of this alert to make the alert reflect the priority you deem it. 
 
 ## Process of re-configuration
 
