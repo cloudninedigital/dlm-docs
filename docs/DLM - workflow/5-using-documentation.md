@@ -15,19 +15,27 @@ In the QA section you can see a list of recent issues found with the current eve
 As central documentation of data collection often occurs in the internal systems of companies, we provide a couple of integration options to keep documentation up to date in your target system:
 
 * confluence sync
-* Azure devops sync
+* Azure devops sync (Beta)
 * Markdown export
 
-## confluence sync (Beta)
-a periodical sync can be made with your confluence environment based on API connection, making sure documentation stays up to date periodically. In order to properly make this connection, setup the connection in the settings page. Below are instructions to setup the entire connection:
+## confluence sync 
+A sync can be made with your confluence environment based on API connection, making sure documentation stays up to date. In order to properly make this connection, setup the connection in the settings page. to setup the connection, add in the field of the Confluence connection: 
 
-**Instructions to be made**
+```{
+  "api_token": "<token generated in the confluence environment>",
+  "parent_page_id": "<numerical ID of the page that should be used as a parent to where all documentation is synced (this can be overridden when actively syncing a single page)>",
+  "api_client": "<email address of the user that generated the token>",
+  "organization_name": "<Confluence organisation name>",
+  "space_key": "<space key in which the documentation needs to be synced>"
+}
+```
+
 
 ## Azure devops (Beta)
 
-a periodical sync can be made with your azure devils environment based on API connection, which makes sure your documentation is kept up to date with recent events: In order to properly make this connection, setup the connection in the settings page. Below are instructions to setup the entire connection:
+a periodical sync can be made with your azure devops environment based on API connection, which makes sure your documentation is kept up to date with recent events: In order to properly make this connection, setup the connection in the settings page. Below are instructions to setup the entire connection:
 
-**Instructions to be made**
+**Please get in contact, this product is still limited and not generally available**
 
 ## Markdown export
 
