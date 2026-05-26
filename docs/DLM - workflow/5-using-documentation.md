@@ -21,7 +21,8 @@ As central documentation of data collection often occurs in the internal systems
 ## confluence sync 
 A sync can be made with your confluence environment based on API connection, making sure documentation stays up to date. In order to properly make this connection, setup the connection in the settings page. to setup the connection, add in the field of the Confluence connection: 
 
-```{
+```
+{
   "api_token": "<token generated in the confluence environment>",
   "parent_page_id": "<numerical ID of the page that should be used as a parent to where all documentation is synced (this can be overridden when actively syncing a single page)>",
   "api_client": "<email address of the user that generated the token>",
