@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Using anomaly detection on even counts (Beta)
+# Using anomaly detection on even counts
 
 Based on daily event counts we run an anomaly detection model, that spots any outliers in the number of events being measured per event. If the number of measured events is higher or lower than the 'upper bound' or 'lower bound' determined from the trained model, an anomaly will be defined and shown in the graph in the anomaly section. In this section you can also view a general overview of how many events are measured over the past period and the fluctuations therein. 
 
