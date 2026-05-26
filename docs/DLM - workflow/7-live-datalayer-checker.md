@@ -2,17 +2,11 @@
 sidebar_position: 3
 ---
 
-# Live datalayer checker (Beta)
+# Live QA
 
-As part of fully integrating with the process of data collection, we have created a live checker functionality as part of the shadowpixel code setup. This is currently only available with GTM, please get in contact with us if you wish this to work in another environment as well. 
+As part of fully integrating with the process of data collection, we have created a live checker functionality that can be activated from the interface. This can be used to quickly validate fixes, acceptance environments or current setups. From the Live QA section, you can start a 'live session' by clicking on the 'Connect to site' button. From here you can fill in the url of your website where the DLM pixel is active, and in your session all events will be routed to the live session. 
 
-The main step to activate the functionality is to execute the following javascript in the console: 
+You should now see the new live session ID popping up, and upon opening, you will start the validation of events that have been gathered so far. Be mindfull that the evaluation may take a minute, and we're working on improving performance of this QA. After a first result is present, new events will be re-evaluated as they come in, updating the present view. 
 
-```javascript
-window.dlm.activate_live_checks();
-```
-
-From this point onwards every datalayer event you trigger in your session will be 'live-checked' and be reported on in your console, which can help you figure out mistakes in your setup more easily and faster whilst in development / debugging. 
-
-Be aware that this feature is, as of yet, a beta product and might still be limited. 
+Separate from reviewing single events, this is also the place where you generate a text or PDF report of what has happened and what errors were still found. This can be used to e.g. share with a development department / party. 
 
